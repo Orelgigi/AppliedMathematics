@@ -6,6 +6,6 @@ Welcome to the **Applied Mathematics Course Repository**. This repository contai
 
 ## 🛠️ Built With
 - Python 3
-- Libraries: `numpy`, `scipy`, `matplotlib`, `sympy`, `pandas`
+- Libraries: `numpy`,  `matplotlib`
 
 ---
