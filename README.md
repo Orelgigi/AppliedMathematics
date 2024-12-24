@@ -98,7 +98,3 @@ For any questions or issues, please contact:
 - **Instructor**: Dr. Jane Doe (jane.doe@example.com)
 - **Teaching Assistant**: John Smith (john.smith@example.com)
 
----
-
-## 📜 License
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
