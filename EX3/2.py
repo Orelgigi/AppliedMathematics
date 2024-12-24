@@ -20,16 +20,16 @@ def plot_chirp():
     Plot segments of the chirp signal and play it
     """
     signal, t = chirp_gen(cm.DUR, cm.F0, cm.U, cm.FS)
-    lenS = len(signal)
+    len_s = len(signal)
     fig, axes = plt.subplots(3, 1, figsize=(17, 11))
     fig.suptitle('***2b***', fontsize=16)
-    axes[0].plot(t[:cm.F0], signal[:cm.F0])
+    axes[0].plot(t[:500], signal[:500])
     axes[0].set_title('Initial Chirp Signal')
-    axes[1].plot(t[((lenS // 2) - 250):((lenS // 2) + 250)], signal[((lenS // 2) - 250):((lenS // 2) + 250)])
+    axes[1].plot(t[((len_s // 2) - 250):((len_s // 2) + 250)], signal[((len_s // 2) - 250):((len_s // 2) + 250)])
     axes[1].set_title('Middle Chirp Signal')
-    axes[2].plot(t[lenS - cm.F0:], signal[lenS - cm.F0:])
+    axes[2].plot(t[len_s - 500:], signal[len_s - 500:])
     axes[2].set_title('Final Chirp Signal')
-    # sd.play(signal, cm.FS)  # Play the chirp signal
+    sd.play(signal, cm.FS)  # Play the chirp signal
     plt.show()
     return signal, t
 
@@ -59,8 +59,8 @@ def find_chirp(noise_s, chirp_s, fs, frame, step=100):
     max_index = np.argmax(ip)
     max_value = ip[max_index]
     max_time = (max_index * step) / fs
-    timeIp = np.arange(len_step) * step / fs
-    plt.plot(timeIp, ip)
+    time_ip = np.arange(len_step) * step / fs
+    plt.plot(time_ip, ip)
     plt.scatter(max_time, max_value, color="red", label=f"Max ({max_time}s, {max_value})")  # Mark max value on plot
     plt.title("Normalized Correlation vs Time  ***2e+2f***")
     plt.xlabel("Time")
