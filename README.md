@@ -14,23 +14,6 @@ This course explores various topics in applied mathematics, emphasizing their pr
 - Probability and Statistics
 - Fourier Analysis
 
----
-
-## 📂 Repository Structure
-The repository is organized as follows:
-
-```
-├── assignments/
-│   ├── hw1_linear_algebra.py       # Homework 1: Linear Algebra
-│   ├── hw2_numerical_methods.py    # Homework 2: Numerical Methods
-│   └── ...                         # Additional homework files
-├── data/
-│   └── example_datasets/           # Example datasets for assignments
-├── utils/
-│   └── helper_functions.py         # Reusable utility functions
-├── README.md                       # Project documentation (this file)
-└── requirements.txt                # Python dependencies
-```
 
 ---
 
